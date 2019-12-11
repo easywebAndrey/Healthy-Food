@@ -1,0 +1,19 @@
+{
+  "name": "healthy-food",
+  "version": "1.0.0",
+  "description": "new project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easywebAndrey/Healthy-Food.git"
+  },
+  "author": "Andrey Bondarenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/easywebAndrey/Healthy-Food/issues"
+  },
+  "homepage": "https://github.com/easywebAndrey/Healthy-Food#readme"
+}

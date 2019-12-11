@@ -1,0 +1,265 @@
+.navigation {
+  height: 80px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  z-index: 222;
+
+  &-wrapper {
+    justify-content: space-between;
+  }
+
+  &-logo {
+    font-size: 30px;
+    line-height: 36px;
+    position: relative;
+    font-weight: 900;
+
+    &::before {
+      content: '';
+      background: url(../../img/header/leaf.png);
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 19px;
+      height: 31px;
+    }
+
+    & span {
+      font-weight: 300;
+    }
+  }
+
+  & .navbar {
+    &-nav {
+      display: flex;
+    }
+  }
+
+  & .nav {
+    &-link {
+      display: block;
+      text-transform: uppercase;
+      color: #333333;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 500;
+      padding: 10px 0;
+    }
+
+    &-item {
+      padding-right: 30px;
+
+      &:last-child {
+        padding-right: 0px;
+      }
+
+      &.action {
+        & .nav-link {
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background-color: #7fbc00;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  & .nav {
+    &-inner {
+      display: flex;
+
+      & .basket {
+        padding-left: 62px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &-img {
+          width: 29px;
+          height: 26px;
+          position: relative;
+
+          & .goods {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            padding: 3px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & span {
+              width: 20px;
+              text-align: center;
+              height: 20px;
+              border-radius: 50%;
+              color: #fff;
+              background-color: #7fbc00;
+            }
+          }
+        }
+
+        & .summ {
+          padding-left: 15px;
+          font-size: 15px;
+          line-height: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.header {
+  background-image: url(../../img/header/headerBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 72px;
+    background: url(../../img/header/waveUn.png);
+    background-position: 50% 50%;
+  }
+
+  &-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-title {
+    font-size: 70px;
+    line-height: 84px;
+    font-weight: 900;
+    margin-bottom: 31px;
+    margin-top: 0;
+
+    & span {
+      font-weight: 300;
+    }
+  }
+
+  &-txt {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 81px;
+    letter-spacing: 4px;
+  }
+
+  &-btn {
+    border: 6px solid #8aceb2;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #000;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    &-title {
+      font-size: 65px;
+      line-height: 80px;
+      margin-bottom: 22px;
+    }
+
+    &-txt {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .header {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &-title {
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 22px;
+    }
+
+    &-txt {
+      margin-bottom: 60px;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &-title {
+      font-size: 44px;
+      line-height: 47px;
+    }
+
+    &-txt {
+      letter-spacing: 1px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .navigation {
+    & .nav {
+      &-inner {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    &-wrapper {
+      text-align: center;
+    }
+
+    &-title {
+      font-size: 41px;
+      line-height: 40px;
+    }
+
+    &-txt {
+      letter-spacing: 1px;
+      margin-bottom: 32px;
+    }
+  }
+}

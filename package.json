@@ -1,19 +1,33 @@
 {
-  "name": "healthy-food",
+  "name": "healthy",
   "version": "1.0.0",
-  "description": "new project",
-  "main": "index.js",
+  "description": "gulp & scss",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/easywebAndrey/Healthy-Food.git"
+    "url": "git+https://github.com/easywebAndrey/Healthy.git"
   },
   "author": "Andrey Bondarenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/easywebAndrey/Healthy-Food/issues"
+    "url": "https://github.com/easywebAndrey/Healthy/issues"
   },
-  "homepage": "https://github.com/easywebAndrey/Healthy-Food#readme"
+  "homepage": "https://github.com/easywebAndrey/Healthy#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "normalize.css": "^8.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "magnific-popup": "^1.1.0",
+    "slick-carousel": "^1.8.1"
+  }
 }

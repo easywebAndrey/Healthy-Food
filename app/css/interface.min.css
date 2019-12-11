@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  font-family: 'Roboto',sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  width: 1800px;
+  margin: 0;
+  padding: 0 15px;
+}
+
+.suptitle {
+  font-size: 14px;
+  line-height: 14.4px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 35px;
+  line-height: 45.5px;
+  margin-bottom: 45px;
+  font-weight: 900;
+}
+
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.block-inner {
+  padding: 0 15px;
+}
+
+.prod-name {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Roboto-Black", sans-serif;
+  color: #525252;
+}
+
+.cost-new {
+  line-height: 16.8px;
+  font-size: 14px;
+  color: #7fba00;
+}
+
+.cost-old {
+  color: #dddddd;
+  line-height: 16.8px;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.btn {
+  padding: 15px 45px;
+  color: #9f9e9c;
+  font-size: 16px;
+  line-height: 19.2px;
+  border: 2px solid #9f9e9c;
+  border-radius: 10px;
+}

@@ -1,0 +1,154 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.suptitle {
+  font-size: 14px;
+  line-height: 14.4px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 35px;
+  line-height: 45.5px;
+  margin-bottom: 45px;
+  font-weight: 900;
+}
+
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.block-inner {
+  padding: 0 15px;
+  display: flex;
+}
+
+.prod-name {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Roboto-Black", sans-serif;
+  color: #525252;
+}
+
+.cost-new {
+  line-height: 16.8px;
+  font-size: 14px;
+  color: #7fba00;
+  font-weight: 900;
+  line-height: 16.8px;
+}
+
+.cost-old {
+  color: #dddddd;
+  line-height: 16.8px;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.btn {
+  padding: 15px 45px;
+  color: #9f9e9c;
+  font-size: 16px;
+  line-height: 19.2px;
+  border: 2px solid #9f9e9c;
+  border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;
+
+  &-tab {
+    border: 2px solid #9f9e9c;
+    color: #9f9e9c;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 1px;
+    margin-bottom: 90px;
+    cursor: pointer;
+    & span{
+      font-weight: 900;
+    }
+
+    &.active {
+      color: #fff;
+      background-color: #81ba00;
+      border-color: #81ba00;
+      box-shadow: 0 0 22px #d6d6d6 ;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 850px;
+  }
+
+  .btn {
+    padding: 12px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .btn {
+    padding: 10px 37px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container{
+    max-width: 100%;
+    padding: 0 15px;
+    margin: auto;
+  }
+}

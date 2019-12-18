@@ -131,8 +131,20 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1
       }
-    },
-  ]
+    }, ]
+  });
+
+
+  // shop-block__slider
+  $('.shopAct-block__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    vertical: true,
+    verticalSwiping: true,
+    prevArrow: '<div class="prev">→</div>',
+    nextArrow: '<div class="next">←</div>',
   });
 
 });

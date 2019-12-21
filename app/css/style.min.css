@@ -1844,6 +1844,9 @@ body {
   .sale {
     padding: 60px 0;
   }
+  .sale .underline {
+    display: none;
+  }
   .sale-header {
     margin: 0 -10px 50px;
     flex-direction: column;
@@ -2028,49 +2031,43 @@ body {
   padding: 59px 39px 36px 41px;
   background-color: #d7edcd;
   border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 
 .shopAct-card__inner.card-right {
   background-color: #fbefa1;
-  position: relative;
 }
 
-.shopAct-card__inner.card-right::after {
-  content: '';
+.shopAct-card__inner .block-img {
   position: absolute;
+  right: 0;
   bottom: 0;
-  right: 0;
-  background: url(../../img/shopAct/orange.png);
-  background-repeat: no-repeat;
-  width: 345px;
-  height: 276px;
 }
 
-.shopAct-card__inner.card-left {
-  position: relative;
+.shopAct-card__inner .block-img img {
+  width: 100%;
 }
 
-.shopAct-card__inner.card-left::before {
-  content: '';
+.shopAct-card__inner .card-left__top, .shopAct-card__inner .card-left__bottom {
   position: absolute;
   top: 0;
+}
+
+.shopAct-card__inner .card-left__top img, .shopAct-card__inner .card-left__bottom img {
+  width: 100%;
+}
+
+.shopAct-card__inner .card-left__top {
   left: 0;
-  width: 217px;
-  height: 110px;
-  background: url(../../img/shopAct/olivLeft.png);
-  background-repeat: no-repeat;
-  z-index: 1;
 }
 
-.shopAct-card__inner.card-left::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: url(../../img/shopAct/olivRight.png);
-  background-repeat: no-repeat;
-  width: 271px;
-  height: 284px;
+.shopAct-card__inner .card-left__top img {
+  width: 200px;
+}
+
+.shopAct-card__inner .card-left__bottom {
+  right: -13px;
 }
 
 .shopAct-card__name {
@@ -2088,6 +2085,12 @@ body {
   text-align: right;
   color: #a7c57f;
   margin-right: 40px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.shopAct-card__name.name-right {
+  color: #afa765;
 }
 
 .shopAct-card__conten {
@@ -2129,4 +2132,115 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .shopAct .shopAct-inner {
+    margin-bottom: 15px;
+  }
+  .shopAct .shopAct-inner__img {
+    flex: 0 0 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .shopAct .shopAct-card__inner {
+    padding-top: 40px;
+    padding-bottom: 27px;
+  }
+  .shopAct .shopAct-card__inner .card-left__top img {
+    width: 170px;
+  }
+  .shopAct .shopAct-card__conten {
+    position: relative;
+  }
+  .shopAct .shopAct-block__inner {
+    max-width: 310px;
+  }
+  .shopAct .shopAct-block__inner .prev,
+  .shopAct .shopAct-block__inner .next {
+    top: -55px;
+  }
+  .shopAct .shopAct-block__suptitle {
+    margin-bottom: 8px;
+  }
+  .shopAct .shopAct-block__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .shopAct .shopAct-card__conten {
+    height: 160px;
+    padding-left: 20px;
+  }
+  .shopAct .shopAct-card__subtitle {
+    font-size: 33px;
+    line-height: 33px;
+  }
+  .shopAct .shopAct-card__inner {
+    padding-top: 32px;
+  }
+  .shopAct .shopAct-card__inner .card-left__bottom {
+    width: 221px;
+  }
+  .shopAct .shopAct-card__inner .card-left__top {
+    display: none;
+  }
+  .shopAct .shopAct-card__inner .block-img {
+    width: 270px;
+  }
+  .shopAct .shopAct-block__inner {
+    max-width: 270px;
+  }
+  .shopAct .shopAct-block__inner .prev,
+  .shopAct .shopAct-block__inner .next {
+    top: -45px;
+  }
+  .shopAct .shopAct-block__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .shopAct .shopAct-inner__desc {
+    flex: 0 0 55%;
+  }
+}
+
+@media (max-width: 880px) {
+  .shopAct {
+    padding-bottom: 50px;
+  }
+  .shopAct .shopAct-card {
+    display: none;
+  }
+  .shopAct .shopAct-random {
+    display: none;
+  }
+  .shopAct .shopAct-block__inner {
+    max-width: 50%;
+    flex: 0 1 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .shopAct .shopAct-block__inner {
+    max-width: 100%;
+    flex: 0 1 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .shopAct .shopAct-inner__img img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 430px) {
+  .shopAct .shopAct-inner__img img {
+    width: 127px;
+    height: 127px;
+  }
 }

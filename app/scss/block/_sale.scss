@@ -455,6 +455,9 @@
 @media (max-width: 678px) {
   .sale {
     padding: 60px 0;
+    & .underline{
+      display: none;
+    }
 
     &-header {
       margin: 0 -10px 50px;

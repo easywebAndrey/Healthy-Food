@@ -2244,3 +2244,180 @@ body {
     height: 127px;
   }
 }
+
+.rewiev {
+  position: relative;
+}
+
+.rewiev-fone {
+  height: 260px;
+  background-color: #f7f6f2;
+  display: flex;
+  align-items: center;
+}
+
+.rewiev::after {
+  content: '';
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background-image: url(../../img/rewiev/Images-left.png);
+  background-repeat: no-repeat;
+  top: -22px;
+  left: 0;
+}
+
+.rewiev::before {
+  content: '';
+  position: absolute;
+  top: -45px;
+  right: 0;
+  background-image: url(../../img/rewiev/img-right.png);
+  background-repeat: no-repeat;
+  width: 199px;
+  height: 244px;
+}
+
+.rewiev .rewiev-wrapper {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rewiev .rewiev-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rewiev .rewiev-suptitle {
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.rewiev .rewiev-title {
+  line-height: 42px;
+  font-weight: 300;
+}
+
+.rewiev .rewiev-title span {
+  font-weight: 900;
+}
+
+.rewiev .rewiev-block__inp {
+  border-radius: 30px;
+  border: none;
+  padding: 20px 30px;
+  width: 550px;
+  background-color: #fff;
+  margin-right: 20px;
+  outline: none;
+}
+
+.rewiev .rewiev-block__inp::placeholder {
+  color: #cccccc;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.rewiev .rewiev-block__btn {
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #7cc000;
+  padding: 18px 54px;
+  border: none;
+  color: #fff;
+}
+
+.rewiev .rewiev-block__wrapper {
+  margin-top: -75px;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.rewiev .rewiev-block__wrapper .prev,
+.rewiev .rewiev-block__wrapper .next {
+  position: absolute;
+  bottom: -10px;
+  font-size: 20px;
+  line-height: 12px;
+  color: #9f9f9f;
+  border: 1px solid #eeeeee;
+  cursor: pointer;
+  transition: all .3s;
+  width: 40px;
+  text-align: center;
+  padding: 5px 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.rewiev .rewiev-block__wrapper .prev:hover,
+.rewiev .rewiev-block__wrapper .next:hover {
+  color: #7fba00;
+}
+
+.rewiev .rewiev-block__wrapper .prev {
+  right: 45%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.rewiev .rewiev-block__wrapper .next {
+  left: 48%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: none;
+}
+
+.rewiev .rewiev-block__slider {
+  background-color: #fff;
+  display: flex !important;
+  justify-content: space-around;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.rewiev .rewiev-block__foto {
+  flex: 0 1 30%;
+  max-width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rewiev .rewiev-block__foto img {
+  border-radius: 50%;
+  border: 5px solid #90d3a6;
+}
+
+.rewiev .rewiev-block__txt {
+  padding-right: 70px;
+  padding-left: 30px;
+  flex: 0 0 70%;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rewiev .rewiev-block__txt .txt {
+  text-align: left;
+  font-size: 17px;
+  line-height: 25px;
+  color: #aaaaaa;
+  margin-bottom: 43px;
+}
+
+.rewiev .rewiev-block__txt .name {
+  font-size: 13px;
+  line-height: 17px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.rewiev .rewiev-block__txt .name i {
+  padding-right: 5px;
+  color: #b8ca00;
+}

@@ -147,4 +147,14 @@ $(document).ready(function () {
     nextArrow: '<div class="next">←</div>',
   });
 
+  // shop-block__rewiev
+  $('.rewiev-block__wrapper').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    prevArrow: '<div class="prev">→</div>',
+    nextArrow: '<div class="next">←</div>',
+  });
+
 });

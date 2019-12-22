@@ -155,6 +155,14 @@ $(document).ready(function () {
     dots: false,
     prevArrow: '<div class="prev">→</div>',
     nextArrow: '<div class="next">←</div>',
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }, ]
   });
 
 });

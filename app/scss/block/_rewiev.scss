@@ -50,6 +50,7 @@
     &-title {
       line-height: 42px;
       font-weight: 300;
+      margin-bottom: 0;
 
       & span {
         font-weight: 900;
@@ -82,6 +83,16 @@
         padding: 18px 54px;
         border: none;
         color: #fff;
+        position: relative;
+
+        &::after {
+          content: '→';
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 30px;
+          color: #fff;
+        }
       }
     }
 
@@ -176,6 +187,200 @@
           & i {
             padding-right: 5px;
             color: #b8ca00;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1700px) {
+  .rewiev {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .rewiev {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .rewiev {
+    &-fone {
+      height: 200px;
+    }
+
+    & .rewiev {
+      &-block {
+        &__wrapper {
+          margin-top: -40px;
+        }
+
+        &__inp {
+          padding: 15px 25px;
+          width: 380px;
+        }
+
+        &__btn {
+          padding: 12px 40px;
+
+          &::after {
+            right: 18px;
+          }
+        }
+
+        &__slider {
+          height: 260px;
+        }
+
+        &__txt {
+          padding-left: 50px;
+        }
+      }
+
+      &-suptitle {
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .rewiev {
+    &-fone {
+      height: 260px;
+    }
+
+    & .rewiev {
+      &-inner {
+        margin: 0 auto;
+        align-items: center;
+      }
+
+      &-title {
+        margin-bottom: 20px;
+      }
+
+      &-block {
+        margin: 0 auto;
+
+        &__txt {
+          padding-left: 20px;
+          padding-right: 25px;
+
+          & .txt {
+            margin-bottom: 25px;
+          }
+        }
+
+        &__wrapper {
+          & .next {
+            left: 45.5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .rewiev {
+    & .rewiev {
+      &-block {
+        &__wrapper {
+          & .prev {
+            right: 42%;
+          }
+
+          & .next {
+            left: 47.5%;
+          }
+        }
+        &__inp{
+          width: 365px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 577px) {
+  .rewiev {
+    & .rewiev {
+      &-block {
+        &__inp {
+          width: 360px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .rewiev {
+    & .rewiev {
+      &-title {
+        font-size: 31px;
+      }
+
+      &-block {
+        &__btn {
+          padding: 10px 17px;
+          font-size: 15px;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        &__foto {
+          & img {
+            width: 85px;
+          }
+        }
+
+        &__inp{
+          width: 295px;
+        }
+
+        &__txt {
+          padding-right: 10px;
+
+          & .txt {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 23px;
+          }
+        }
+
+        &__slider {
+          height: 240px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .rewiev {
+    & .rewiev {
+      &-block{
+        &__inp {
+          width: 170px;
+          margin-right: 10px;
+          padding: 12px 8px;
+  
+          &::placeholder {
+            font-size: 14px;
+            line-height: 16px;
           }
         }
       }

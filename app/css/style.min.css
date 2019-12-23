@@ -2561,3 +2561,207 @@ body {
     line-height: 16px;
   }
 }
+
+.footer {
+  background-color: #f9f8f4;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.footer-wrapper {
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.footer-title {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 80px;
+  position: relative;
+  font-weight: 300;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  width: 30px;
+  height: 2px;
+  background-color: #7ac200;
+}
+
+.footer-title span {
+  font-weight: 900;
+}
+
+.footer-contact {
+  padding: 0 10px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact__logo {
+  font-size: 30px;
+  line-height: 36px;
+  position: relative;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+
+.footer-contact__logo span {
+  font-weight: 300;
+}
+
+.footer-contact__logo::before {
+  content: '';
+  background: url(../../img/header/leaf.png);
+  position: absolute;
+  top: -20px;
+  left: 60px;
+  width: 19px;
+  height: 31px;
+}
+
+.footer-contact__logo::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #7ac200;
+  bottom: -40px;
+  left: 0;
+}
+
+.footer-contact__txt {
+  margin-bottom: 20px;
+}
+
+.footer-contact__street, .footer-contact__email, .footer-contact__website {
+  font-size: 15px;
+  line-height: 23px;
+  color: #525252;
+}
+
+.footer-contact__street:hover, .footer-contact__email:hover, .footer-contact__website:hover {
+  color: #7ac200;
+}
+
+.footer-contact__street i, .footer-contact__email i, .footer-contact__website i {
+  padding-right: 20px;
+}
+
+.footer-contact__street {
+  display: flex;
+}
+
+.footer-info {
+  padding: 0 10px;
+  flex: 1;
+}
+
+.footer-info ul li {
+  display: flex;
+}
+
+.footer-info ul li a {
+  position: relative;
+  padding-left: 20px;
+  color: #525252;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.footer-info ul li a:hover {
+  color: #7ac200;
+}
+
+.footer-info ul li a::after {
+  content: "\f05d";
+  width: 10;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-account {
+  padding: 0 10px;
+  flex: 1;
+}
+
+.footer-account ul li {
+  display: flex;
+}
+
+.footer-account ul li a {
+  position: relative;
+  padding-left: 20px;
+  color: #525252;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.footer-account ul li a:hover {
+  color: #7ac200;
+}
+
+.footer-account ul li a::after {
+  content: "\f05d";
+  width: 10;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-insta {
+  padding: 0 10px;
+  flex: 2;
+}
+
+.footer-insta__box {
+  margin: -5px;
+}
+
+.footer-insta__box img {
+  padding: 5px;
+}
+
+@media (max-width: 1200px) {
+  .footer-title {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-insta {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-contact {
+    flex: 100%;
+    margin-bottom: 40px;
+  }
+  .footer-contact__logo {
+    margin-bottom: 40px;
+  }
+  .footer-contact__logo::after {
+    bottom: -20px;
+  }
+  .footer-title {
+    margin-bottom: 40px;
+  }
+  .footer-title::after {
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-title {
+    font-size: 15px;
+  }
+}

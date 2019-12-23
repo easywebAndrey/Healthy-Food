@@ -1,0 +1,209 @@
+.footer {
+  background-color: #f9f8f4;
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  &-wrapper {
+    justify-content: space-between;
+    margin: 0 -10px;
+  }
+
+  &-title {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 80px;
+    position: relative;
+    font-weight: 300;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+      width: 30px;
+      height: 2px;
+      background-color: #7ac200;
+    }
+
+    & span {
+      font-weight: 900;
+    }
+  }
+
+  &-contact {
+    padding: 0 10px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+
+    &__logo {
+      font-size: 30px;
+      line-height: 36px;
+      position: relative;
+      font-weight: 900;
+      margin-bottom: 80px;
+
+      & span {
+        font-weight: 300;
+      }
+
+      &::before {
+        content: '';
+        background: url(../../img/header/leaf.png);
+        position: absolute;
+        top: -20px;
+        left: 60px;
+        width: 19px;
+        height: 31px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #7ac200;
+        bottom: -40px;
+        left: 0;
+      }
+    }
+
+    &__txt {
+      margin-bottom: 20px;
+    }
+
+    &__street,
+    &__email,
+    &__website {
+      font-size: 15px;
+      line-height: 23px;
+      color: #525252;
+
+      &:hover {
+        color: #7ac200;
+      }
+
+      & i {
+        padding-right: 20px;
+      }
+    }
+    &__street{
+      display:flex;
+    }
+  }
+
+  &-info {
+    padding: 0 10px;
+    flex: 1;
+
+    & ul {
+      & li {
+        display: flex;
+        & a {
+          position: relative;
+          padding-left: 20px;
+          color: #525252;
+          font-size: 15px;
+          line-height: 23px;
+
+          &:hover {
+            color: #7ac200;
+          }
+
+          &::after {
+            content: "\f05d";
+            width: 10;
+            height: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &-account {
+    padding: 0 10px;
+    flex: 1;
+
+    & ul {
+      & li {
+        display:flex;
+        & a {
+          position: relative;
+          padding-left: 20px;
+          color: #525252;
+          font-size: 15px;
+          line-height: 23px;
+
+          &:hover {
+            color: #7ac200;
+          }
+
+          &::after {
+            content: "\f05d";
+            width: 10;
+            height: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &-insta {
+    padding: 0 10px;
+    flex: 2;
+    &__box{
+      margin: -5px;
+      & img{
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer{
+    &-title{
+      font-size: 17px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .footer{
+    &-insta{
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer{
+    &-contact{
+      flex: 100%;
+      margin-bottom: 40px;
+      &__logo{
+        margin-bottom: 40px;
+        &::after{
+          bottom: -20px;
+        }
+      }
+    }
+    &-title{
+      margin-bottom: 40px;
+      &::after{
+        bottom: -20px;
+      }
+    }
+  }
+}
+@media (max-width: 576px){
+  .footer{
+    &-title{
+      font-size: 15px;
+    }
+  }
+} 
